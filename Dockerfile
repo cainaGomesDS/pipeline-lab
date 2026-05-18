@@ -1,4 +1,4 @@
-FROM maven:3-openjdk-17 as builder
+FROM maven:3-eclipse-temurin-17 AS builder
 LABEL authors="brito"
 
 WORKDIR /build
@@ -7,7 +7,7 @@ COPY . .
 
 RUN mvn clean package -DskipTests -Dcheckstyle.skip=true
 
-FROM openjdk:17-slim
+FROM eclipse-temurin:17-jre-jammy
 
 WORKDIR /app
 
