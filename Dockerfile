@@ -1,5 +1,5 @@
 FROM maven:3-eclipse-temurin-17 AS builder
-LABEL authors="brito"
+LABEL authors="caina"
 
 WORKDIR /build
 
