@@ -60,4 +60,4 @@ jobs: # Trabalhos a serem executados
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: caina/ci-example:latest
+          tags: cainago/ci-example:latest
